@@ -1,0 +1,27 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td{
+    padding: 4px;
+}
+
+th, label{
+    text-align: center;
+}
+
+label{
+    padding-left: 10px;
+}
+
+h2{
+    padding: 5px;
+}
+
+#form-head{
+    padding-top: 15px;
+}
+
+#tableCheck{
+    padding-top: 30px;
+}
