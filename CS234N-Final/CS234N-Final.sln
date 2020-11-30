@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitEFClasses", "..\BitEFClasses\BitEFClasses.csproj", "{546454C4-75BA-4B24-8B4A-68354986D223}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitTests", "BitTests\BitTests.csproj", "{DDF29EC3-9439-413E-86DF-D32B59D6236B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitTests", "BitTests\BitTests.csproj", "{DDF29EC3-9439-413E-86DF-D32B59D6236B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitRESTAPI", "BitRESTAPI\BitRESTAPI.csproj", "{FABB5764-C861-494C-92F0-390B05F40942}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DDF29EC3-9439-413E-86DF-D32B59D6236B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDF29EC3-9439-413E-86DF-D32B59D6236B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDF29EC3-9439-413E-86DF-D32B59D6236B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FABB5764-C861-494C-92F0-390B05F40942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FABB5764-C861-494C-92F0-390B05F40942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FABB5764-C861-494C-92F0-390B05F40942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FABB5764-C861-494C-92F0-390B05F40942}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
