@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brew Schedule</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -38,23 +39,8 @@
     </div>
     <div class="row">
         <div class="col-sm-1"></div>
-        <table class="col-sm-9">
-            <tr>
-                <th>Name</th>
-                <th>Version</th>
-                <th>Ingredients</th>
-                <th>Batch Size</th>
-                <th>Start Date</th>
-                <th>End Date</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+        <table class="col-sm-9" id="batchRows">
+            
         </table>
     </div>
     <div class="row" id="form-head">
@@ -65,22 +51,22 @@
     </div>
     <div class="row">
         <div class="col-sm-1"></div>
-        <div class="form-row">
+        <div class="form-row" id="batchForm">
             <div class="col">
                 <label for="rName">Brew Recipe</label>
-                <select class="form-control" id="rName">
+                <select class="form-control" id="recipeName" required>
                     <option></option>
                 </select>
             </div>
             <div class="col">
                 <label for="version">Version</label>
-                <select class="form-control" id="version">
+                <select class="form-control" id="version" disabled>
                     <option></option>
                 </select>
             </div>
             <div class="col">
                 <label for="batchSize">Batch Size</label>
-                <input type="number" id="batchSize">
+                <input type="number" id="batchSize" required>
             </div>
             <div class="col">
                 <label for="sDate">Start Date</label>
@@ -91,8 +77,8 @@
                 <input type="datetime-local" id="eDate">
             </div>
             <div class="col">
-                <input type="button" value="Check Availability">
-                <input type="button" value="Add Brew to Schedule">
+                <input type="button" value="Check Availability" id="checkBtn"><!--Didn't try to do the check functionality.-->
+                <input type="submit" value="Add Brew To Schedule" id="addBtn">
             </div>
         </div>
     </div>
@@ -105,14 +91,20 @@
                 <th>Cureent Product Inventory</th>
             </tr>
             <tr>
-                <td>Yes/No</td>
-                <td>Yes/No</td>
-                <td>Number</td>
+                <td id="ingredientCheck">Yes/No</td>
+                <td id="containerCheck">Yes/No</td>
+                <td id="inventory">Number</td>
             </tr>
         </table>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous">
 
+    </script>
+    <script src="js/Brew.js">
+    </script>
 
 </body>
 </html>
